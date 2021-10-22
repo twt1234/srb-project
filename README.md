@@ -1,2 +1,2 @@
-# src-project
+# srb-project
 尚融宝项目
