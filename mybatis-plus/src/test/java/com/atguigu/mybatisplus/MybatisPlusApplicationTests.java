@@ -54,6 +54,7 @@ class MybatisPlusApplicationTests {
         System.out.println("影响行数:"+insert);
     }
 
+    //测试合并
     @Test
     public void testDeleteByMap(){
         Map<String,Object> map = new HashMap();
