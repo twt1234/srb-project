@@ -55,6 +55,7 @@ class MybatisPlusApplicationTests {
     }
 
     //测试合并
+    //测试提交冲突
     @Test
     public void testDeleteByMap(){
         Map<String,Object> map = new HashMap();
