@@ -10,7 +10,9 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -49,6 +51,14 @@ class MybatisPlusApplicationTests {
     @Test
     public void testDelete(){
         int insert = userMapper.deleteById(3);
+        System.out.println("影响行数:"+insert);
+    }
+
+    @Test
+    public void testDeleteByMap(){
+        Map<String,Object> map = new HashMap();
+        map.put("id",5);
+        int insert = userMapper.deleteByMap(map);
         System.out.println("影响行数:"+insert);
     }
 
